@@ -1,0 +1,8 @@
+gogs:
+    build: .
+    ports:
+        - 3000:3000
+        - 22:22
+    volumes:
+        - ./conf:/gogs/custom/conf
+        - ./repo/:/home/git/gogs-repositories
